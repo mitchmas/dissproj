@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="adbt171.mmproject.SignupController">
+   <left>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #474242;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="18.0" layoutY="25.0" text="CRM" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="72.0" />
+               </font>
+            </Label>
+            <Label layoutX="11.0" layoutY="88.0" text="&amp;" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="36.0" />
+               </font>
+            </Label>
+            <Label layoutX="29.0" layoutY="119.0" text="ROTA" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="52.0" />
+               </font>
+            </Label>
+            <Label layoutX="23.0" layoutY="178.0" text="MULTI-MANAGER" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="48.0" layoutY="207.0" text="by Mitchell Massiah" textFill="#eae7e7" />
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="400.0" prefWidth="400.0" style="-fx-background-color: #605e5e;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="16.0" layoutY="96.0" text="Enter Username" textFill="WHITE">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="go_login" layoutX="215.0" layoutY="336.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="118.0" style="-fx-background-color: #dcdcdc;" text="Log in" />
+            <Button fx:id="signup_button" layoutX="110.0" layoutY="249.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="180.0" style="-fx-background-color: #dcdcdc;" text="Sign Up">
+               <font>
+                  <Font name="Berlin Sans FB" size="20.0" />
+               </font>
+            </Button>
+            <TextField fx:id="user_field" layoutX="183.0" layoutY="95.0" promptText="Username" />
+            <PasswordField fx:id="pass_field" layoutX="183.0" layoutY="149.0" promptText="Password" />
+            <Label layoutX="15.0" layoutY="151.0" text="Enter Password" textFill="WHITE">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="30.0" layoutY="338.0" text="Have an account?" textFill="WHITE">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="11.0" layoutY="200.0" text="Confirm Password" textFill="WHITE">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="17.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="pass_conf_field" layoutX="183.0" layoutY="198.0" promptText="Re-enter Password" />
+            <Label layoutX="161.0" layoutY="14.0" text="Signup" textFill="#e4e3e3">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="450.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="adbt171.mmproject.TableController">
+   <children>
+      <BorderPane prefHeight="450.0" prefWidth="400.0">
+         <top>
+            <AnchorPane prefHeight="67.0" prefWidth="400.0" style="-fx-background-color: #4F4557;" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="85.0" layoutY="18.0" text="Add/Edit/Delete an Event!" textFill="#ffe9e9">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+               </children></AnchorPane>
+         </top>
+         <center>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #6D5D6E;" BorderPane.alignment="CENTER">
+               <children>
+                  <TextField fx:id="rotaID" layoutX="96.0" layoutY="1.0" prefHeight="26.0" prefWidth="203.0" promptText="Rota ID" style="-fx-background-color: #dcdcdc;" />
+                  <TextField fx:id="rota_name" layoutX="96.0" layoutY="72.0" prefHeight="26.0" prefWidth="204.0" promptText="Event/Employee Name" style="-fx-background-color: #dcdcdc;" />
+                  <TextField fx:id="rota_start_date" layoutX="96.0" layoutY="108.0" prefHeight="26.0" prefWidth="204.0" promptText="Start Date (YYYY-MM-DD)" style="-fx-background-color: #dcdcdc;" />
+                  <TextField fx:id="rota_start_time" layoutX="96.0" layoutY="185.0" prefHeight="26.0" prefWidth="205.0" promptText="Start Time (hh:mm)" style="-fx-background-color: #dcdcdc;" />
+                  <TextField fx:id="rota_end_time" layoutX="96.0" layoutY="226.0" prefHeight="26.0" prefWidth="206.0" promptText="End Time (hh:mm)" style="-fx-background-color: #dcdcdc;" />
+                  <Button fx:id="rota_add" layoutX="54.0" layoutY="334.0" mnemonicParsing="false" onMouseClicked="#edit_record" style="-fx-background-color: #949494;" text="Add Event" />
+                  <TextField fx:id="rota_end_date" layoutX="96.0" layoutY="146.0" prefHeight="26.0" prefWidth="204.0" promptText="End Date (YYYY-MM-DD)" style="-fx-background-color: #dcdcdc;" />
+                  <Button fx:id="rota_remove" layoutX="273.0" layoutY="334.0" mnemonicParsing="false" onMouseClicked="#edit_record" style="-fx-background-color: #949494;" text="Remove Event" />
+                  <Button fx:id="rota_edit" layoutX="166.0" layoutY="334.0" mnemonicParsing="false" onMouseClicked="#edit_record" style="-fx-background-color: #949494;" text="Edit Event" />
+                  <TextField fx:id="rota_comments" layoutX="96.0" layoutY="265.0" prefHeight="26.0" prefWidth="208.0" promptText="Notes" style="-fx-background-color: #dcdcdc;" />
+                  <TextField fx:id="rota_event" layoutX="96.0" layoutY="36.0" prefHeight="26.0" prefWidth="203.0" promptText="Event Type (shift/absence/meeting)" style="-fx-background-color: #dcdcdc;" />
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

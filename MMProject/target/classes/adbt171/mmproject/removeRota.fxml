@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="450.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="adbt171.mmproject.TableController">
+   <children>
+      <BorderPane prefHeight="450.0" prefWidth="400.0">
+         <top>
+            <AnchorPane prefHeight="67.0" prefWidth="400.0" style="-fx-background-color: #4F4557;" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="13.0" layoutY="20.0" text="Remove Select Entries before a Chosen Date!" textFill="#ffe9e9">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+               </children></AnchorPane>
+         </top>
+         <center>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #6D5D6E;" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="remove_entries" layoutX="104.0" layoutY="219.0" mnemonicParsing="false" onMouseClicked="#edit_record" prefHeight="62.0" prefWidth="191.0" style="-fx-background-color: #949494;" text="Remove Entries Before Date" />
+                  <TextField fx:id="remove_entries_type" layoutX="75.0" layoutY="121.0" prefHeight="53.0" prefWidth="250.0" promptText="Enter Type ( * , shift, absence, meeting)" style="-fx-background-color: #dcdcdc;" />
+                  <TextField fx:id="remove_entries_date" layoutX="75.0" layoutY="27.0" prefHeight="53.0" prefWidth="250.0" promptText="Enter Date (YYYY-MM-DD)" style="-fx-background-color: #dcdcdc;" />
+                  <Label layoutX="8.0" layoutY="325.0" text="WARNING! This will remove all entries of a select type ( or * for all types)" textFill="#ef1313" />
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
